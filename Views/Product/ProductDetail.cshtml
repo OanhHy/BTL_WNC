@@ -1,0 +1,10 @@
+@model MVC03.Models.ProductModel
+
+<h2>Chi tiết sản phẩm</h2>
+<div>
+    <img src="@Model.ImageURL" alt="@Model.ProductName" style="width:300px;" />
+    <h3>@Model.ProductName</h3>
+    <p><b>Giá:</b> @Model.ProductPrice.ToString("C")</p>
+    <p><b>Mô tả:</b> @Model.Description</p>
+    <a href="@Url.Action("ProductList", "Product")">Quay lại danh sách</a>
+</div>
